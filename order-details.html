@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<HTML dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <title>NOW</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/floating-labels/">
+
+    <link rel='shortcut icon' type='img/png' href='images/fav.png' />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo-bars">
+                    <a role="button" class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="menu-overlay"></div>
+                <nav>
+                    <a role="button" class="menu-close">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <ul class="mo-navbar list-unstyled">
+                        <li class="mo-nav-item">
+                            <a href="index.html" class="mo-nav-link">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="products.html" class="mo-nav-link">
+                                المنتجات
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="services.html" class="mo-nav-link">
+                                الخدمات
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="about.html" class="mo-nav-link">
+                                من نحن
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="contact.html" class="mo-nav-link">
+                                اتصل بنا
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="en/order-details.html" class="lang">
+                        en
+                    </a>
+                </nav>
+                <div class="header-tools">
+                    <a role="button" class="notification-icon header-icon">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <div class="user-cont">
+                        <a role="button" class="user-icon header-icon">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="drop-down">
+                            <a href="my-acc.html">
+                                بيانات الحساب
+                            </a>
+                            <a href="address-book.html">
+                                دفتر العناوين
+                            </a>
+                            <a href="my-orders.html">
+                                طلباتي
+                            </a>
+                            <a href="my-acc.html">
+                                الإعدادات
+                            </a>
+                            <a href="index.html">
+                                تسجيل خروج
+                            </a>
+                        </div>
+                    </div>
+                    <a href="cart.html" class="cart-link header-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                        <strong class="cart-items">1</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <ul class="breadcrumb-ul">
+                <li class="breadcrumb-li">
+                    <a href="index.html" class="breadcrumb-a">
+                        الرئيسية
+                    </a>
+                </li>
+                <li class="breadcrumb-li">
+                    <a href="my-orders.html" class="breadcrumb-a">
+                        طلباتي
+                    </a>
+                </li>
+                <li class="breadcrumb-li">
+                    <a href="order-details.html" class="breadcrumb-a">
+                        تفاصيل الطلب
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Page Content -->
+    <section class="content-section order-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <ul class="acc-list list-unstyled">
+                        <li class="acc-item">
+                            <a class="acc-link" href="my-acc.html">
+                                <i class="fas fa-edit"></i>
+                                بيانات الحساب
+                            </a>
+                        </li>
+                        <li class="acc-item">
+                            <a class="acc-link" href="address-book.html">
+                                <i class="fas fa-address-book"></i>
+                                دفتر العناوين
+                            </a>
+                        </li>
+                        <li class="acc-item">
+                            <a class="acc-link active" href="my-orders.html">
+                                <i class="fas fa-file-alt"></i>
+                                طلباتي
+                            </a>
+                        </li>
+                        <li class="acc-item">
+                            <a class="acc-link" href="my-acc.html">
+                                <i class="fas fa-cog"></i>
+                                الإعدادات
+                            </a>
+                        </li>
+                        <li class="acc-item">
+                            <a class="acc-link" href="index.html">
+                                <i class="fas fa-sign-out-alt"></i>
+                                تسجيل خروج
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="acc-head">
+                        <h2 class="acc-title">
+                            تفاصيل الطلب
+                        </h2>
+                        <a href="#!" class="reorder">
+                            <i class="fas fa-redo"></i>
+                            اعادة الطلب
+                        </a>
+                    </div>
+                    <div class="single-order">
+                        <div class="order-head">
+                            <div class="order-no">
+                                رقم الطلب <span>2547</span>
+                            </div>
+                            <div class="order-date">
+                                25 مايو 2021
+                            </div>
+                        </div>
+                        <div class="order-progress">
+                            <div class="order-step done">
+                                <div class="step-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span class="step-name">
+                                    قيد التنفيذ
+                                </span>
+                            </div>
+                            <div class="order-step done">
+                                <div class="step-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span class="step-name">
+                                    جاري التوصيل
+                                </span>
+                            </div>
+                            <div class="order-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span class="step-name">
+                                    تم التوصيل
+                                </span>
+                            </div>
+                        </div>
+                        <div class="order-summary">
+                            <div class="summry-item">
+                                <div class="order-name">
+                                    <a href="product.html" class="name">
+                                        جهاز فلترة المياه من رومر
+                                    </a>
+                                    <div class="single-qty-price">
+                                        <div class="order-qty">
+                                            x 1
+                                        </div>
+                                        <div class="single-price">
+                                            750 ريال
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-price">
+                                    750 ريال
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totals">
+                            <div class="total">
+                                <span class="title">
+                                    إجمالي الطلب
+                                </span>
+                                <span class="value">
+                                    750 ريال
+                                </span>
+                            </div>
+                            <div class="total">
+                                <span class="title">
+                                    تكلفة التوصيل
+                                </span>
+                                <span class="value">
+                                    10 ريال
+                                </span>
+                            </div>
+                            <div class="total">
+                                <span class="title">
+                                    ضريبة القيمة المضافة
+                                </span>
+                                <span class="value">
+                                    114 ريال
+                                </span>
+                            </div>
+                            <div class="total">
+                                <span class="title">
+                                    الإجمالي
+                                </span>
+                                <span class="value">
+                                    874 ريال
+                                </span>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <h4 class="title">
+                                وسيلة الدفع
+                            </h4>
+                            <div class="method">
+                                <img src="images/checkout/01.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <h4 class="title">
+                                عنوان التوصيل
+                            </h4>
+                            <div class="order-map">
+                                <div id="order-map"></div>
+                                <div class="locationInput-container">
+                                    <input disabled type="text" class="locationInput" value="الصقور، خميس مشيط 62462، السعودية">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Page Content -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="footer-about">
+                            <div class="footer-about-logo">
+                                <img src="images/logo.png" class="img-fluid">
+                            </div>
+                            <p class="footer-about-text">
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                على الشكل الخارجي
+                                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                            </p>
+                            <div class="socials">
+                                <a href="#!" class="social">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-list-content">
+                            <h3 class="footer-head footer-list-head">
+                                روابط هامة
+                            </h3>
+                            <ul class="footer-list list-unstyled">
+                                <li class="list-item">
+                                    <a href="about.html" class="list-link">
+                                        من نحن
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="bank-accounts.html" class="list-link">
+                                        الحسابات البنكية
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="terms.html" class="list-link">
+                                        الشروط والأحكام
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="privacy-policy.html" class="list-link">
+                                        سياسة الخصوصية
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="contact.html" class="list-link">
+                                        اتصل بنا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="download-content">
+                            <h3 class="footer-head download-head">
+                                حمل تطبيق NOW
+                            </h3>
+                            <div class="download-links">
+                                <a href="#!" class="download-link">
+                                    <img src="images/links/01.png" class="img-fluid">
+                                </a>
+                                <a href="#!" class="download-link">
+                                    <img src="images/links/02.png" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maroof">
+                    <a href="#!" class="maroof">
+                        <img src="images/links/maroof.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="payments">
+                    <img src="images/payment/01.png" class="img-fluid">
+                    <img src="images/payment/02.png" class="img-fluid">
+                    <img src="images/payment/03.png" class="img-fluid">
+                    <img src="images/payment/04.png" class="img-fluid">
+                    <img src="images/payment/05.png" class="img-fluid">
+                    <img src="images/payment/06.png" class="img-fluid">
+                </div>
+                <p class="copyrights">
+                    © NOW 2021, جميع الحقوق محفوظة
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/ar.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?region=SA&language=ar&key=AIzaSyA9UeezZ2xyNjrwck8SLdh9NxsJp6HhLQc&libraries=places">
+    </script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            initMap()
+        });
+
+        function initMap() {
+            const myLatLng = {
+                lat: 24.774255,
+                lng: 46.737586534
+            };
+            let map = new google.maps.Map(document.getElementById("order-map"), {
+                center: myLatLng,
+                zoom: 17,
+            });
+            let marker = new google.maps.Marker({
+                position: map.getCenter(),
+                map,
+                icon: "images/pin.png"
+            });
+        }
+    </script>
+</body>
+
+</HTML>

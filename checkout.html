@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<HTML dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <title>NOW</title>
+    <link rel='shortcut icon' type='img/png' href='images/fav.png' />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo-bars">
+                    <a role="button" class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="menu-overlay"></div>
+                <nav>
+                    <a role="button" class="menu-close">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <ul class="mo-navbar list-unstyled">
+                        <li class="mo-nav-item">
+                            <a href="index.html" class="mo-nav-link">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="products.html" class="mo-nav-link">
+                                المنتجات
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="services.html" class="mo-nav-link">
+                                الخدمات
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="about.html" class="mo-nav-link">
+                                من نحن
+                            </a>
+                        </li>
+                        <li class="mo-nav-item">
+                            <a href="contact.html" class="mo-nav-link">
+                                اتصل بنا
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="en/checkout.html" class="lang">
+                        en
+                    </a>
+                </nav>
+                <div class="header-tools">
+                    <a role="button" class="notification-icon header-icon">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <div class="user-cont">
+                        <a role="button" class="user-icon header-icon">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="drop-down">
+                            <a href="my-acc.html">
+                                بيانات الحساب
+                            </a>
+                            <a href="address-book.html">
+                                دفتر العناوين
+                            </a>
+                            <a href="my-orders.html">
+                                طلباتي
+                            </a>
+                            <a href="my-acc.html">
+                                الإعدادات
+                            </a>
+                            <a href="index.html">
+                                تسجيل خروج
+                            </a>
+                        </div>
+                    </div>
+                    <a href="cart.html" class="cart-link header-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                        <strong class="cart-items">1</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <ul class="breadcrumb-ul">
+                <li class="breadcrumb-li">
+                    <a href="index.html" class="breadcrumb-a">
+                        الرئيسية
+                    </a>
+                </li>
+                <li class="breadcrumb-li">
+                    <a href="checkout.html" class="breadcrumb-a">
+                        انهاء الطلب
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Page Content -->
+    <section class="content-section checkout-content">
+        <div class="container">
+            <h2 class="page-title">
+                انهاء الطلب
+            </h2>
+            <div class="ship-hint">
+                <i class="fas fa-info-circle"></i>
+                <span>
+                    الحد الأدني للتوصيل لعنوانك الحالي 150 ريال لإجمالي الطلب
+                </span>
+            </div>
+            <div class="checkout-map">
+                <div id="checkout-map"></div>
+                <a role="button" class="locationButton">
+                    <img src="images/checkout/location.png">
+                </a>
+                <div class="locationInput-container">
+                    <input type="text" class="locationInput">
+                    <a role="button" class="adressBook" data-toggle="modal" data-target="#addressBook-modal">
+                        <i class="fas fa-address-book"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="payment-methods-content">
+                <h2 class="page-title">
+                    حدد طريقة الدفع
+                </h2>
+                <div class="payment-methods">
+                    <label class="payment-method" data-toggle="tooltip" data-placement="top" title="الدفع عند الإستلام">
+                        <input type="radio" name="payment-methods" value="01">
+                        <div class="payment-img loading-img">
+                            <img class="lazy-img" data-src="images/checkout/01.png">
+                        </div>
+                    </label>
+                    <label class="payment-method" data-toggle="tooltip" data-placement="top" title="فيزا و ماستر كارد">
+                        <input type="radio" name="payment-methods" value="02">
+                        <div class="payment-img loading-img">
+                            <img class="lazy-img" data-src="images/checkout/02.png">
+                        </div>
+                    </label>
+                    <label class="payment-method" data-toggle="tooltip" data-placement="top" title="مدى">
+                        <input type="radio" name="payment-methods" value="03">
+                        <div class="payment-img loading-img">
+                            <img class="lazy-img" data-src="images/checkout/03.png">
+                        </div>
+                    </label>
+                    <label class="payment-method" data-toggle="tooltip" data-placement="top" title="سداد">
+                        <input type="radio" name="payment-methods" value="04">
+                        <div class="payment-img loading-img">
+                            <img class="lazy-img" data-src="images/checkout/04.png">
+                        </div>
+                    </label>
+                    <label class="payment-method" data-toggle="tooltip" data-placement="top" title="تحويل بنكى">
+                        <input type="radio" name="payment-methods" value="05">
+                        <div class="payment-img loading-img">
+                            <img class="lazy-img" data-src="images/checkout/05.png">
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="delivery-time-content">
+                <h2 class="page-title">
+                    حدد موعد التوصيل
+                </h2>
+                <div class="delivery-time">
+                    <label class="delivery-item">
+                        <input type="radio" name="delivery-time" value="immediately">
+                        <div class="delivery-item-text">
+                            <div class="text">
+                                <i class="fas fa-stopwatch"></i>
+                                فوري
+                            </div>
+                        </div>
+                    </label>
+                    <label class="delivery-item">
+                        <input type="radio" name="delivery-time" class="select-date">
+                        <div class="delivery-item-text">
+                            <div class="text">
+                                <i class="fas fa-clock"></i>
+                                تحديد موعد
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <a href="status.html" class="cart-btn">
+                إتمام الطلب
+            </a>
+        </div>
+    </section>
+    <!-- End Page Content -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="footer-about">
+                            <div class="footer-about-logo">
+                                <img src="images/logo.png" class="img-fluid">
+                            </div>
+                            <p class="footer-about-text">
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                على الشكل الخارجي
+                                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+                            </p>
+                            <div class="socials">
+                                <a href="#!" class="social">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="social">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-list-content">
+                            <h3 class="footer-head footer-list-head">
+                                روابط هامة
+                            </h3>
+                            <ul class="footer-list list-unstyled">
+                                <li class="list-item">
+                                    <a href="about.html" class="list-link">
+                                        من نحن
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="bank-accounts.html" class="list-link">
+                                        الحسابات البنكية
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="terms.html" class="list-link">
+                                        الشروط والأحكام
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="privacy-policy.html" class="list-link">
+                                        سياسة الخصوصية
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="contact.html" class="list-link">
+                                        اتصل بنا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="download-content">
+                            <h3 class="footer-head download-head">
+                                حمل تطبيق NOW
+                            </h3>
+                            <div class="download-links">
+                                <a href="#!" class="download-link">
+                                    <img src="images/links/01.png" class="img-fluid">
+                                </a>
+                                <a href="#!" class="download-link">
+                                    <img src="images/links/02.png" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maroof">
+                    <a href="#!" class="maroof">
+                        <img src="images/links/maroof.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="payments">
+                    <img src="images/payment/01.png" class="img-fluid">
+                    <img src="images/payment/02.png" class="img-fluid">
+                    <img src="images/payment/03.png" class="img-fluid">
+                    <img src="images/payment/04.png" class="img-fluid">
+                    <img src="images/payment/05.png" class="img-fluid">
+                    <img src="images/payment/06.png" class="img-fluid">
+                </div>
+                <p class="copyrights">
+                    © NOW 2021, جميع الحقوق محفوظة
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Adress Book Modal -->
+    <div class="modal fade addressBook-modal" id="addressBook-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="address-list">
+                        <label class="adress-item">
+                            <input type="radio" name="adressBook" value="01">
+                            <div class="adress-head">
+                                <span class="name">
+                                    Sayed Talhawy
+                                </span>
+                                <span class="checkmark">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </div>
+                            <p class="address-text">
+                                الأخيار، الجزيرة، الرياض 14251 2229، السعودية
+                            </p>
+                            <strong class="address-phone">
+                                0540000000
+                            </strong>
+                        </label>
+                        <label class="adress-item">
+                            <input type="radio" name="adressBook" value="02">
+                            <div class="adress-head">
+                                <span class="name">
+                                    Sayed Talhawy
+                                </span>
+                                <span class="checkmark">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </div>
+                            <p class="address-text">
+                                الأخيار، الجزيرة، الرياض 14251 2229، السعودية
+                            </p>
+                            <strong class="address-phone">
+                                0540000000
+                            </strong>
+                        </label>
+                        <label class="adress-item">
+                            <input type="radio" name="adressBook" value="03">
+                            <div class="adress-head">
+                                <span class="name">
+                                    Sayed Talhawy
+                                </span>
+                                <span class="checkmark">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </div>
+                            <p class="address-text">
+                                الأخيار، الجزيرة، الرياض 14251 2229، السعودية
+                            </p>
+                            <strong class="address-phone">
+                                0540000000
+                            </strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a role="button" data-dismiss="modal" class="continue-btn">
+                        متابعة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Adress Book Modal -->
+
+    <!-- Start Adress Book Modal -->
+    <div class="modal fade date-modal" id="date-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">اختر يوم التوصيل</h5>
+                    <div class="date-picker-container">
+                        <input type="date" class="datePicker">
+                        <span class="fas fa-calendar-alt"></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">حدد الفترة</h5>
+                    <div class="times-list">
+                        <label class="time-range">
+                            <input type="radio" name="time-range">
+                            <span class="time-text">
+                                من 08:00 صباحًا إلى 11:00 صباحًا
+                            </span>
+                        </label>
+                        <label class="time-range">
+                            <input type="radio" name="time-range">
+                            <span class="time-text">
+                                من 01:00 مساءًا إلى 04:00 مساءًا
+                            </span>
+                        </label>
+                        <label class="time-range">
+                            <input type="radio" name="time-range">
+                            <span class="time-text">
+                                من 06:00 مساءًا إلى 10:00 مساءًا
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a role="button" data-dismiss="modal" class="continue-btn">
+                        متابعة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Adress Book Modal -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/ar.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?region=SA&language=ar&key=AIzaSyA9UeezZ2xyNjrwck8SLdh9NxsJp6HhLQc&libraries=places">
+    </script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            initMap()
+        });
+
+        function initMap() {
+            const myLatLng = {
+                lat: 24.774255,
+                lng: 46.737586534
+            };
+            let map = new google.maps.Map(document.getElementById("checkout-map"), {
+                center: myLatLng,
+                zoom: 17,
+            });
+            let marker = new google.maps.Marker({
+                position: map.getCenter(),
+                draggable: true,
+                map,
+                icon: "images/pin.png"
+            });
+            const locationButton = document.getElementsByClassName('locationButton')[0];
+            locationButton.addEventListener("click", () => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude,
+                            };
+                            marker.setPosition(pos);
+                            map.setCenter(pos);
+                            updateInput(pos)
+                        },
+                    );
+                }
+            });
+
+            google.maps.event.addListener(marker, "dragend", function (e) {
+                updateInput(e.latLng)
+            });
+        }
+
+        function updateInput(latLng) {
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({
+                'latLng': latLng
+            }, function (results) {
+                document.getElementsByClassName('locationInput')[0].value = results[0].formatted_address
+            });
+        }
+    </script>
+</body>
+
+</HTML>
