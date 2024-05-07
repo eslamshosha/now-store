@@ -5927,7 +5927,7 @@ nav .menu-close:focus {
   border-radius: 0;
   border-bottom: 1px solid var(--border-color);
 }
-.filter-cont .btn-link {
+.filter-cont .cat-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -5940,21 +5940,14 @@ nav .menu-close:focus {
   font-size: 16px;
   i {
     font-size: 14px;
-    transform: rotate(90deg);
 
     transition: all 0.3s ease-in-out;
   }
 }
 html[dir="ltr"] .filter-cont .btn-link i {
-  transform: scaleX(-1) rotate(90deg);
+  transform: scaleX(-1);
 }
-.filter-cont .btn-link.collapsed i {
-  transform: rotate(0);
-}
-html[dir="ltr"] .filter-cont .btn-link.collapsed i {
-  transform: scaleX(-1) rotate(0);
-}
-.filter-cont .btn-link:hover {
+.filter-cont .cat-link:hover {
   color: var(--main-color);
 }
 .filter-cont .card-body {
