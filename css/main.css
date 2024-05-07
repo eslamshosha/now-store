@@ -5961,6 +5961,11 @@ html[dir="ltr"] .filter-cont .btn-link i {
 .check-group {
   margin-bottom: 10px;
 }
+.filter-cont .check-group {
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+  margin-bottom: 0;
+}
 .check-label {
   /* min-width: 25%; */
   text-align: start;
