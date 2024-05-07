@@ -5772,8 +5772,8 @@ nav .menu-close:focus {
   position: relative;
 }
 .drop-link::after {
-  content: "";
-  font-family: "Linearicons-Free";
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
   font-size: 9px;
   margin-inline-start: 5px;
   font-weight: 900;
