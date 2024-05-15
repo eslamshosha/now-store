@@ -150,6 +150,7 @@ $(document).ready(function () {
   }
   $(".btn-addToCart").click(function () {
     $(this).siblings(".item-qty").slideDown(400);
+    $(this).hide();
   });
   ///////// ** select address ** /////////
   $(".adress-item>input").on("change", function () {
