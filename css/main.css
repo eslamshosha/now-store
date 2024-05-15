@@ -6192,7 +6192,7 @@ html[dir="ltr"] .filter-cont .btn-link i {
 .product-desc {
   margin-top: 60px;
 }
-.product-desc .section-head{
+.product-desc .section-head {
   margin-bottom: 20px;
 }
 .product-pargh {
@@ -6201,4 +6201,27 @@ html[dir="ltr"] .filter-cont .btn-link i {
   line-height: 1.667;
   margin-bottom: 0;
   text-align: start;
+}
+.btn-addToCart {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--main-color);
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-addToCart:hover,
+.btn-addToCart:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--sec-color);
+}
+.hide.item-qty {
+  display: none;
+  margin-bottom: 18px;
 }

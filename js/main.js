@@ -148,6 +148,9 @@ $(document).ready(function () {
       $(".filter-cont").toggleClass("active");
     });
   }
+  $(".btn-addToCart").click(function () {
+    $(this).siblings(".item-qty").slideDown(400);
+  });
   ///////// ** select address ** /////////
   $(".adress-item>input").on("change", function () {
     if ($(this).is(":checked")) {
