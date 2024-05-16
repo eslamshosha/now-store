@@ -152,6 +152,10 @@ $(document).ready(function () {
     $(this).siblings(".item-qty").slideDown(400);
     $(this).hide();
   });
+  $(".item-addToCart").click(function () {
+    $(this).siblings(".item-qty-cont").slideDown(400);
+    $(this).hide();
+  });
   ///////// ** select address ** /////////
   $(".adress-item>input").on("change", function () {
     if ($(this).is(":checked")) {
