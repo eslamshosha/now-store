@@ -238,6 +238,24 @@
         </div>
         <hr>
         <div class="container">
+            <div class="ship-hint">
+                <i class="fas fa-info-circle"></i>
+                <span>
+                    الحد الأدني للتوصيل لعنوانك الحالي 150 ريال لإجمالي الطلب
+                </span>
+            </div>
+            <div class="checkout-map">
+                <div id="checkout-map"></div>
+                <a role="button" class="locationButton">
+                    <img src="images/checkout/location.png">
+                </a>
+                <div class="locationInput-container">
+                    <input type="text" class="locationInput">
+                    <a role="button" class="adressBook" data-toggle="modal" data-target="#addressBook-modal">
+                        <i class="fas fa-address-book"></i>
+                    </a>
+                </div>
+            </div>
             <div class="totals">
                 <div class="total">
                     <span class="total-title">
@@ -390,7 +408,61 @@
     <script src="js/flatpickr.min.js"></script>
     <script src="js/ar.js"></script>
     <script src="js/select2.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?region=SA&language=ar&key=AIzaSyA9UeezZ2xyNjrwck8SLdh9NxsJp6HhLQc&libraries=places">
+    </script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            initMap()
+        });
+
+        function initMap() {
+            const myLatLng = {
+                lat: 24.774255,
+                lng: 46.737586534
+            };
+            let map = new google.maps.Map(document.getElementById("checkout-map"), {
+                center: myLatLng,
+                zoom: 17,
+            });
+            let marker = new google.maps.Marker({
+                position: map.getCenter(),
+                draggable: true,
+                map,
+                icon: "images/pin.png"
+            });
+            const locationButton = document.getElementsByClassName('locationButton')[0];
+            locationButton.addEventListener("click", () => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude,
+                            };
+                            marker.setPosition(pos);
+                            map.setCenter(pos);
+                            updateInput(pos)
+                        },
+                    );
+                }
+            });
+
+            google.maps.event.addListener(marker, "dragend", function (e) {
+                updateInput(e.latLng)
+            });
+        }
+
+        function updateInput(latLng) {
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({
+                'latLng': latLng
+            }, function (results) {
+                document.getElementsByClassName('locationInput')[0].value = results[0].formatted_address
+            });
+        }
+    </script>
 </body>
 
 </HTML>

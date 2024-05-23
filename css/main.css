@@ -3524,8 +3524,13 @@ html[dir="ltr"] .code-input button {
   height: 334px;
   position: relative;
   margin-top: 13px;
+  margin-bottom: 116px;
 }
-
+@media (max-width: 767px) {
+  .checkout-map {
+    margin-bottom: 70px;
+  }
+}
 .checkout-map #checkout-map {
   width: 100%;
   height: 100%;
@@ -6225,4 +6230,3 @@ html[dir="ltr"] .filter-cont .btn-link i {
 .hide.item-qty {
   display: none;
 }
-
