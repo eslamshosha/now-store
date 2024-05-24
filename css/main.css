@@ -646,7 +646,18 @@ select {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
+.locationInput-container .select2-container .select2-selection--single {
+  font-size: 17px;
+  color: var(--sec-color);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  height: 62px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 31px;
+  padding: 0 50px;
+  border: none;
+}
 .select2-container .select2-selection--single .select2-selection__rendered {
   display: -webkit-box;
   display: -ms-flexbox;
