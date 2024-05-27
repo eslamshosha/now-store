@@ -658,6 +658,9 @@ select {
   padding: 0 50px;
   border: none;
 }
+.locationInput-container .float-field {
+  width: 100%;
+}
 .select2-container .select2-selection--single .select2-selection__rendered {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3581,6 +3584,9 @@ html[dir="ltr"] .code-input button {
   right: 25px;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 991px) {
@@ -3626,10 +3632,10 @@ html[dir="ltr"] .locationInput-container .locationInput {
 }
 
 .locationInput-container .adressBook {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   font-size: 30px;
   color: var(--sec-color);
   -webkit-transition: all 0.3s ease-in-out;
@@ -3640,6 +3646,7 @@ html[dir="ltr"] .locationInput-container .locationInput {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .locationInput-container .adressBook:hover,
@@ -3648,7 +3655,7 @@ html[dir="ltr"] .locationInput-container .locationInput {
   text-decoration: none;
 }
 
-html[dir="rtl"] .locationInput-container .adressBook {
+/* html[dir="rtl"] .locationInput-container .adressBook {
   left: 40px;
 }
 
@@ -3664,7 +3671,7 @@ html[dir="ltr"] .locationInput-container .adressBook {
   html[dir="ltr"] .locationInput-container .adressBook {
     right: 20px;
   }
-}
+} */
 
 .payment-methods-content {
   margin-top: 116px;
