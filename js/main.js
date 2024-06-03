@@ -205,6 +205,15 @@ $(document).ready(function () {
       swiper: productThumbs,
     },
   });
+  const selectExists = document.getElementsByClassName("phone").length > 0;
+  if (selectExists) {
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js",
+    });
+  }
+
   lazyLoad();
 });
 function uploadImg(input) {
