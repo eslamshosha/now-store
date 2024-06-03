@@ -14,10 +14,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/flatpickr.min.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css"
-    />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -108,10 +105,25 @@
         <form class="register-form">
           <div class="form-group required">
             <label> رقم الجوال </label>
-            <div class="input-container">
-              <input type="tel" id="phone" class="form-control phone" />
+            <div class="select-box form-control">
+              <div class="selected-option">
+                <div>
+                  <span class="iconify" data-icon="flag:gb-4x3"></span>
+                  <strong>+44</strong>
+                </div>
+                <input type="tel" name="tel" placeholder="Phone Number" />
+              </div>
+              <div class="options">
+                <input
+                  type="text"
+                  class="search-box"
+                  placeholder="Search Country Name"
+                />
+                <ol></ol>
+              </div>
             </div>
           </div>
+
           <div class="form-group required">
             <label> الاسم بالكامل </label>
             <input type="text" class="form-control" />
@@ -244,8 +256,22 @@
           <div class="modal-body">
             <form class="login-form">
               <div class="form-group">
-                <div class="input-container">
-                  <input type="tel" id="phone2" class="form-control phone" />
+                <div class="select-box form-control">
+                  <div class="selected-option">
+                    <div>
+                      <span class="iconify" data-icon="flag:gb-4x3"></span>
+                      <strong>+44</strong>
+                    </div>
+                    <input type="tel" name="tel" placeholder="Phone Number" />
+                  </div>
+                  <div class="options">
+                    <input
+                      type="text"
+                      class="search-box"
+                      placeholder="Search Country Name"
+                    />
+                    <ol></ol>
+                  </div>
                 </div>
               </div>
               <!-- <button type="submit" class="submit-btn">
@@ -273,7 +299,7 @@
     <script src="js/flatpickr.min.js"></script>
     <script src="js/ar.js"></script>
     <script src="js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
+    
     <script src="js/main.js"></script>
   </body>
 </html>
