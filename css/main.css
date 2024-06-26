@@ -6451,7 +6451,7 @@ input.search-box {
   background-color: #f0f0f0;
   color: var(--sec-color);
   border-radius: 0.5rem 0.5rem 0 0;
-  padding: .9rem 1rem;
+  padding: 0.9rem 1rem;
 }
 
 .select-box ol {
@@ -6493,4 +6493,15 @@ input.search-box {
 
 .select-box ol li .country-name {
   margin-left: 0.4rem;
+}
+.store-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--sec-color);
+  text-decoration: none !important;
+}
+@media (max-width: 400px) {
+  .store-name {
+    font-size: 16px;
+  }
 }
