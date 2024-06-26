@@ -547,6 +547,7 @@ selected_option.addEventListener("click", () => {
 
 options.forEach((option) => option.addEventListener("click", selectOption));
 search_box.addEventListener("input", searchCountry);
+search_box2.addEventListener("input", searchCountry);
 //country code select
 
 function uploadImg(input) {
