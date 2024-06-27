@@ -1969,6 +1969,7 @@ header {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  gap: 15px;
 }
 
 .menu-btn {
@@ -1977,14 +1978,6 @@ header {
   display: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-html[dir="rtl"] .menu-btn {
-  margin-left: 15px;
-}
-
-html[dir="ltr"] .menu-btn {
-  margin-right: 15px;
 }
 
 .menu-btn:hover,
