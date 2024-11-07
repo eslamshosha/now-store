@@ -184,6 +184,10 @@ $(document).ready(function () {
   var productThumbs = new Swiper(".product-thumbs", {
     slidesPerView: 4,
     // loop: true,
+    navigation: {
+      nextEl: ".product-thumbs .swiper-btn-next",
+      prevEl: ".product-thumbs .swiper-btn-prev",
+    },
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -198,6 +202,12 @@ $(document).ready(function () {
       },
     },
   });
+  //jump to slide
+  $(".button").click(function(){
+    setTimeout(function () {
+      productImgs.slideTo(4, 10, false);
+    }, 175);
+  })
   var productImgs = new Swiper(".product-imgs", {
     spaceBetween: 1,
     // loop: true,

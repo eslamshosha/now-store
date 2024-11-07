@@ -6499,3 +6499,41 @@ input.search-box {
     font-size: 16px;
   }
 }
+.product-thumbs .swiper-btn {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-thumbs .swiper-btn:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.product-thumbs .swiper-btn.swiper-btn-next {
+  left: 10px;
+}
+
+.product-thumbs .swiper-btn.swiper-btn-prev {
+  right: 10px;
+}
