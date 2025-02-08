@@ -2009,7 +2009,7 @@ header {
 
 .logo {
   display: block;
-  width: 184px;
+  max-width: 184px;
 }
 
 .logo img {
@@ -2023,13 +2023,13 @@ header {
 
 @media (max-width: 1199px) {
   .logo {
-    width: 160px;
+    max-width: 160px;
   }
 }
 
 @media (max-width: 767px) {
   .logo {
-    width: 120px;
+    max-width: 120px;
   }
 }
 
