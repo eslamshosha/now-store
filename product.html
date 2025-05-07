@@ -183,6 +183,22 @@
                       </a>
                     </div>
                   </div>
+                  <div class="swiper-slide">
+                    <div class="single-img-container">
+                      <a
+                        data-fancybox="post"
+                        href="https://www.youtube.com/embed/tgbNymZ7vqY"
+                        class="loading-img single-img"
+                      >
+                        <iframe
+                          width="100%"
+                          height="300"
+                          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                        >
+                        </iframe>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="swiper-container product-thumbs">
@@ -658,6 +674,43 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <div class="toast-msg">
+      <div class="toast-content">
+        <i class="fas fa-check-circle"></i>
+        <div class="message">
+          <span class="text-msg">تم اضافه المنتج للسلة بنجاح</span>
+        </div>
+      </div>
+      <div class="progress"></div>
+    </div>
+
+    <button onclick="addToast()">Show Toast</button>
+    <script>
+        const toast = document.querySelector(".toast-msg");
+      progress = document.querySelector(".progress");
+
+      let timer1, timer2;
+      
+      function addToast() {
+        toast.classList.add("active");
+        progress.classList.add("active");
+
+        timer1 = setTimeout(() => {
+          toast.classList.remove("active");
+        }, 3000);
+
+        timer2 = setTimeout(() => {
+          progress.classList.remove("active");
+        }, 3000);
+      }
+      setTimeout(() => {
+        progress.classList.remove("active");
+      }, 300);
+
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -3,7 +3,6 @@ $(document).ready(function () {
   //////////** main slider **//////////
   var mainswiper = new Swiper(".main-slider .swiper-container", {
     spaceBetween: 15,
-    loop: true,
     autoplay: {
       delay: 5000,
     },
@@ -18,7 +17,7 @@ $(document).ready(function () {
   });
   //////////** products slider **//////////
   var productswiper = new Swiper(".products-slider .swiper-container", {
-    loop: true,
+    
     breakpoints: {
       0: {
         slidesPerView: 2,
@@ -40,7 +39,7 @@ $(document).ready(function () {
   });
   //////////** services slider **//////////
   var serviceswiper = new Swiper(".services-slider .swiper-container", {
-    loop: true,
+    
     breakpoints: {
       0: {
         slidesPerView: 2,
@@ -62,7 +61,7 @@ $(document).ready(function () {
   });
   ///////// **category-section** /////////
   var categorySlider = new Swiper(".category-section .swiper-container", {
-    loop: true,
+    
     autoplay: true,
     preloadImages: false,
     pagination: {
