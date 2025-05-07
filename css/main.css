@@ -6399,7 +6399,7 @@ input[type="tel"] {
   line-height: 25px;
 }
 @media (max-width: 767px) {
-  .selected-option div strong{
+  .selected-option div strong {
     padding-top: 2px;
   }
 }
@@ -6544,10 +6544,10 @@ input.search-box {
 .product-thumbs .swiper-btn.swiper-btn-prev {
   right: 10px;
 }
-.category-section{
+.category-section {
   overflow: hidden;
 }
-.add-to-cont{
+.add-to-cont {
   position: relative;
 }
 .add-to-cont .dropdown-menu {
@@ -6571,7 +6571,7 @@ input.search-box {
   z-index: 90;
   transition: 0.3s ease;
 }
-.add-to-cont .dropdown-menu ul{
+.add-to-cont .dropdown-menu ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -6601,7 +6601,7 @@ input.search-box {
   flex-shrink: 0;
   margin: 0;
 }
-.add-to-cont .cart-image{
+.add-to-cont .cart-image {
   width: 40px;
   height: 40px;
   max-width: 100%;
@@ -6636,7 +6636,7 @@ input.search-box {
 .add-to-cont .continue-btn {
   margin: 0;
 }
-.dropdown-btn-cont{
+.dropdown-btn-cont {
   padding-top: 10px;
 }
 /* @media (max-width: 767px) {
@@ -6645,20 +6645,19 @@ input.search-box {
   }
 } */
 
-
 /*            category      */
 html {
   scroll-behavior: smooth;
 }
 .section-nav {
   position: sticky;
-  top: 0;
+  top: var(--header-height);
   z-index: 9;
   align-self: start;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   background-color: #f6f6f6;
 }
-.section-nav ol{
+.section-nav ol {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -6678,7 +6677,7 @@ html {
   white-space: nowrap;
   transition: all 50ms ease-in-out;
 }
-.section-nav a::after{
+.section-nav a::after {
   content: "";
   width: 100%;
   height: 3px;
@@ -6696,11 +6695,31 @@ html {
   visibility: visible;
   opacity: 1;
 }
-.section-nav a:hover{
+.section-nav a:hover {
   color: #666;
 }
 
 .sticky-category section {
   padding: 0;
   padding-top: 70px;
+}
+
+/*fixed header*/
+:root {
+  --header-height: 0px;
+}
+body {
+  padding-top: var(--header-height);
+  transition: padding-top 0.3s ease;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* height: var(--header-height); */
+  background-color: #fff;
+  z-index: 99;
+  transition: height 0.3s ease;
 }
